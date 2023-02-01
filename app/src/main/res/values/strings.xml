@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AcronymsDemo</string>
+    <string name="search_an_acronym">Search an acronym</string>
+    <string name="search">Search</string>
+    <string name="please_enter_an_acronym">Please enter an acronym</string>
+    <string name="no_network_connection">No Network Connection</string>
+    <string name="variation_text">Variation(s): %1$s</string>
+    <string name="no_acronym_found">No Acronym found for the following text</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="longForm"
+            type="com.ramprasad.acronymsdemo.model.LongForm" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/long_form_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{longForm.meaning}'
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            tools:text="Hidden Markov Model"/>
+
+        <TextView
+            android:id="@+id/variation_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/long_form_text"
+            app:setVariationText='@{longForm.variations}'
+            tools:text="Variations: 6a-hydroxymaackiain 3-O-methyltransferase "/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
